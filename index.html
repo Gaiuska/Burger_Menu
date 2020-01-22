@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <div id="upper_banner">
+      <div id="banner_header">
+        <div id="logo">
+          logo
+        </div>
+        <div id="login_etc">
+          <div class="login_grid">
+            <div>log in </div>
+            <div>sign up</div>
+            <div>sandwich</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="get_started">
+        <i id="favourite">
+          Find your favourite
+        </i>
+        <h1 id="recipes">
+          RECIPES
+        </h1>
+        <a href="#browse" id="button" class="button">
+          <div>GET STARTED </div>
+        </a>
+        <p>
+          OR SEND YOUR OWN RECIPES AND GET REWARDED!
+        </p>
+      </div>
+    </div>
+    <section class="three_circles">
+      <div class="circle_wrapper">
+        <div class="icon_container">
+          <img src="https://i.ibb.co/19ht7RQ/sandwich-icon.png" alt="sandwich-icon" class="icon" />
+        </div>
+        <h3>GET INSPIRED</h3>
+        <div class="short_line"></div>
+        <p class="text">
+          Sempre caro mi fu quest'ermo colle,
+          e questa siepe, che da tanta parte
+          dell'ultimo orizzonte il guardo esclude.
+        </p>
+      </div>
+      <div class="circle_wrapper">
+        <div class="icon_container">
+          <img src="https://i.ibb.co/51FTpDq/money-icon.png" alt="sandwich-icon" class="icon" />
+        </div>
+        <h3>GET REWARDED</h3>
+        <div class="short_line"></div>
+        <p class="text">
+          Ma sedendo e mirando, interminati
+          spazi di là da quella, e sovrumani
+          silenzi, e profondissima quiete
+          io nel pensier mi fingo, ove per poco
+          il cor non si spaura.
+        </p>
+      </div>
+      <div class="circle_wrapper">
+        <div class="icon_container">
+          <img src="https://i.ibb.co/C6cdzvW/cook.png" alt="sandwich-icon" class="icon" />
+        </div>
+        <h3>GET SOCIAL</h3>
+        <div class="short_line"></div>
+        <p class="text">E come il vento
+            odo stormir tra queste piante, io quello
+            infinito silenzio a questa voce
+            vo comparando: e mi sovvien l'eterno,
+            e le morte stagioni, e la presente
+            e viva, e il suon di lei.
+        </p>
+      </div>
+    </section>
+    <section id="grey_banner">
+      <div class="grey_banner_section" id="iphone">
+        <img src="./img/iphone.png" alt="iphone" class="iphone-image"> 
+      </div>
+      <div class="grey_banner_section" id="iphone_content">
+        <h2>INTRODUCING THE FUDI APP</h2>
+        <div class="short_line"></div>
+        <p>
+          Nel mezzo del cammin di nostra vita
+        mi ritrovai per una selva oscura
+        ché la diritta via era smarrita.
+        Nel mezzo del cammin di nostra vita
+        mi ritrovai per una selva oscura
+        ché la diritta via era smarrita.
+        Nel mezzo del cammin di nostra vita
+        mi ritrovai per una selva oscura
+        ché la diritta via era smarrita.
+        </p>
+        <div>
+        </div>
+      </div>
+    </section>
+
+    <div id="slider">
+      <div id="slider-content">
+      </div>
+      <div id="slider_buttons">
+        <button class="slider_button" onclick="renderSliderContent(0)"></button>
+        <button class="slider_button" onclick="renderSliderContent(1)"></button>
+        <button class="slider_button" onclick="renderSliderContent(2)"></button>
+      </div>
+    </div>
+
+
+
+    <section id="bottom_part">
+      <h2 id="browse">BROWSE BY CUISINES</h2>
+      <div class="short_line"></div>
+      <div class="cuisines_wrapper cuisines_wrapper--first">
+        <div id="cuisine_italian" class="cuisine-container">
+          <p><i>12 recipes</i><br/>ITALIAN</p>
+        </div>
+        <div id="cuisine_indian" class="cuisine-container">
+          <p><i>12 recipes</i><br/>INDIAN</p>
+        </div>
+        <div id="cuisine_french" class="cuisine-container">
+          <p><i>12 recipes</i><br/>FRENCH</p>
+        </div>
+        <div id="cuisine_steakhouse" class="cuisine-container">
+          <p><i>12 recipes</i><br/>STEAKHOUSE</p>
+        </div>
+        <div id="cuisine_seafood" class="cuisine-container">
+          <p><i>12 recipes</i><br/>SEAFOOD</p>
+        </div>
+      </div>
+
+      <div class="cuisines_wrapper">
+        <div id="cuisine_sushi" class="cuisine-container">
+          <p><i>12 recipes</i><br/>SUSHI</p>
+        </div>
+        <div id="cuisine_mexican" class="cuisine-container">
+          <p><i>12 recipes</i><br/>MEXICAN</p>
+        </div>
+        <div id="cuisine_chinese" class="cuisine-container">
+          <p><i>12 recipes</i><br/>CHINESE</p>
+        </div>
+        <div id="cuisine_pizza" class="cuisine-container">
+          <p><i>12 recipes</i><br/>PIZZA</p>
+        </div>
+        <div id="cuisine_american" class="cuisine-container">
+          <p><i>12 recipes</i><br/>AMERICAN</p>
+        </div>
+      </div>
+
+      <div class="statistics">
+        <div class="statistics-container">
+          <p>1,3123</p>
+          <p>text</p>
+        </div>
+        <div class="statistics-container">
+          <p>1,3123</p>
+          <p>text</p>
+        </div>
+        <div class="statistics-container">
+          <p>1,3123</p>
+          <p>text</p>
+        </div>
+        <div class="statistics-container">
+          <p>1,3123</p>
+          <p>text</p>
+        </div>
+        <div class="statistics-container">
+          <p>1,3123</p>
+          <p>text</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>&copy;2020</div>
+      <div>DESIGN BY</div>
+    </footer>
+  </main>
+  <script src="./slider.js"></script>
+
+  <script>
+  $(document).ready(function(){
+   $("a").on('click', function(event) {
+     if (this.hash !== "") {
+       event.preventDefault();
+       var hash = this.hash;
+       $('html, body').animate({
+         scrollTop: $(hash).offset().top
+       }, 800, function(){
+         window.location.hash = hash;
+       });
+     }
+   });
+  });
+  </script>
+</body>
+
+</html>
